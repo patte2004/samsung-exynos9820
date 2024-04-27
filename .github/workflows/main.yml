@@ -55,7 +55,7 @@ jobs:
           set -e -o pipefail
           ./cruelbuild config                    \
                        model=G973F               \
-                       name="Cruel-kitsune       \
+                       name="Cruel-kitsune"      \
                        toolchain=$TOOLCHAIN      \
                        +magisk=alpha             \
                        +nohardening              \
