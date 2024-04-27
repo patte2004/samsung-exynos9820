@@ -54,10 +54,10 @@ jobs:
         run: |
           set -e -o pipefail
           ./cruelbuild config                    \
-                       model=${{ matrix.model }} \
-                       name="Cruel-devel"        \
+                       model=G973F               \
+                       name="Cruel-kitsune       \
                        toolchain=$TOOLCHAIN      \
-                       +magisk                   \
+                       +magisk=alpha             \
                        +nohardening              \
                        +ttl                      \
                        +wireguard                \
