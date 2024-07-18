@@ -54,10 +54,10 @@ jobs:
         run: |
           set -e -o pipefail
           ./cruelbuild config                    \
-                       model=G973F               \
+                       model="G973F"             \
                        name="Cruel-Canary "      \
                        toolchain=$TOOLCHAIN      \
-                       +magisk=canary            \
+                       +magisk                   \
                        +nohardening              \
                        +ttl                      \
                        +wireguard                \
