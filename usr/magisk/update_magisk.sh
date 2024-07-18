@@ -17,8 +17,7 @@ then
 elif [ "x$1" = "xcanary" ]
 then
 	nver="canary"
-        ver="b38ab2a7"
-	magisk_link="$(curl -s https://raw.githubusercontent.com/topjohnwu/magisk-files/master/${nver}.json | jq -r '.magisk.link')"
+        magisk_link="$(curl -s https://raw.githubusercontent.com/topjohnwu/magisk-files/master/${nver}.json | jq -r '.magisk.link')"
 elif [ "x$1" = "xalpha" ]
 then
 	nver="alpha"
