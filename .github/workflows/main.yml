@@ -57,7 +57,7 @@ jobs:
                        model="G973F"             \
                        name="Cruel-Canary "      \
                        toolchain=$TOOLCHAIN      \
-                       +magisk                   \
+                       +magisk=canary            \
                        +nohardening              \
                        +ttl                      \
                        +wireguard                \
