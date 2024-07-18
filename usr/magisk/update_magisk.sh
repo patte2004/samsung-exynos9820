@@ -17,7 +17,7 @@ then
 elif [ "x$1" = "xcanary" ]
 then
 	nver="canary"
-	magisk_link="https://github.com/topjohnwu/magisk-files/raw/${nver}/app-debug.apk"
+	magisk_link="$(curl -s https://raw.githubusercontent.com/topjohnwu/magisk-files/master/${nver}.json | jq -r '.magisk.link')"
 elif [ "x$1" = "xalpha" ]
 then
 	nver="alpha"
